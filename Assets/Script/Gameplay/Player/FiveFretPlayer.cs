@@ -32,7 +32,7 @@ namespace YARG.Gameplay.Player
 
         protected override GuitarEngine CreateEngine()
         {
-            _engineParams = new GuitarEngineParameters(0.16, 1, 0.08, 0.07, 0.035,
+            _engineParams = new GuitarEngineParameters(0.15, 1, 0.08, 0.06, 0.025,
                 SettingsManager.Settings.InfiniteFrontEnd.Data, SettingsManager.Settings.AntiGhosting.Data);
             var engine = new YargFiveFretEngine(NoteTrack, SyncTrack, _engineParams);
 
@@ -99,6 +99,16 @@ namespace YARG.Gameplay.Player
 
             _fretArray.Initialize(Player.ColorProfile, Player.Profile.LeftyFlip);
             HitWindowDisplay.SetHitWindowInfo(_engineParams, NoteSpeed);
+        }
+
+        public override void ResetPracticeSection()
+        {
+            base.ResetPracticeSection();
+
+            for(int i = 0; i < _fretArray.Frets.Count; i++)
+            {
+                _fretArray.SetSustained(i, false);
+            }
         }
 
         public override void UpdateWithTimes(double inputTime, double songTime)
