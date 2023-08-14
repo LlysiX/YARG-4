@@ -7,7 +7,7 @@ namespace YARG.Gameplay.Visuals
     public class FretArray : MonoBehaviour
     {
         private const float WIDTH_NUMERATOR   = 2f;
-        private const float WIDTH_DENOMINATOR = 5f;
+        private const float WIDTH_DENOMINATOR = 2.1f;
 
         [SerializeField]
         private int _fretCount;
@@ -31,11 +31,11 @@ namespace YARG.Gameplay.Visuals
 
                 // Position
                 float x = _trackWidth / _fretCount * i - _trackWidth / 2f + 1f / _fretCount;
-                fret.transform.localPosition = new(leftyFlip ? -x : x, 0f, 0f);
+                fret.transform.localPosition = new(leftyFlip ? -x : x, .1f, 0f);
 
                 // Scale
                 float scale = (_trackWidth / WIDTH_NUMERATOR) / (_fretCount / WIDTH_DENOMINATOR);
-                fret.transform.localScale = new(scale, 1f, 1f);
+                fret.transform.localScale = new(scale, 1f, .35f);
 
                 // Add
                 var fretComp = fret.GetComponent<Fret>();

@@ -146,6 +146,11 @@ PrefabInstance:
       propertyPath: _noFcRingMaterial
       value: 
       objectReference: {fileID: 2100000, guid: ce3039f4da289c046b33066e508567f0, type: 2}
+    - target: {fileID: 2647690867028395734, guid: 5800c42510b55c549be95ec3ecd75e1c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.97
+      objectReference: {fileID: 0}
     - target: {fileID: 3161527738386327264, guid: 5800c42510b55c549be95ec3ecd75e1c,
         type: 3}
       propertyPath: _prefab

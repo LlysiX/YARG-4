@@ -51,8 +51,8 @@ MonoBehaviour:
   _sustainParticles: {fileID: 8239036785535390091}
   _animation: {fileID: 2171860084974843366}
   _fretMesh: {fileID: 1226096347714245238}
-  _topIndex: 1
-  _innerIndex: 2
+  _topIndex: 0
+  _innerIndex: 3
 --- !u!1001 &65771977195352275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ PrefabInstance:
     - target: {fileID: 390555847532752811, guid: f57a620848afb314997dd24edc527f7d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.015682096
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 390555847532752811, guid: f57a620848afb314997dd24edc527f7d,
         type: 3}
@@ -221,7 +221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f40aa7cc27f0a2144af59c84bfed5811, type: 2}
+      objectReference: {fileID: 2100000, guid: 65af99829ee466f47a4535010b6716df, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f57a620848afb314997dd24edc527f7d, type: 3}
 --- !u!4 &92557977566226713 stripped
